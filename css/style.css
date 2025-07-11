@@ -131,7 +131,7 @@ nav h3{
 
 .focus-section{
     text-align: center;
-    background-color: #f8f3f3;
+    background-color: white;
     border-radius: 14px;
     margin: 130px 0px;
     padding: 70px 150px;
@@ -155,10 +155,12 @@ nav h3{
 .contact-content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* gap: 115px; */
+    justify-content: center;
+    gap: 50px;
     padding-bottom: 100px;
-    margin-right: 50px;
+    margin: 0;
+    max-width: 1140px;
+    
 }
 
 .contact-title h3{
@@ -183,16 +185,55 @@ form input[type="text"], input[type="email"], form textarea{
 }
 .contact-btn{
     background-color: blue;
-    width: 112%;
+    width: 100%;
     display: block;
     padding: 20px;
     border-radius: 10px;
     color: white;
     border: none;
+    margin-top: 10ox;
     
 
 }
 
 form{
     /* padding: 50px; */
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 120px 0px;
+    
+}
+.footer-content{
+    margin: 0px 310px;
+}
+.footer-logo h3{
+   color: blue;
+   font-size: 50px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   font-family: "Inter", sans-serif;
+
+
+}
+.footer-content ul{
+   display: flex;
+   justify-content: center;
+    
+   
+   
+}
+.footer-content ul li{
+list-style: none;
+margin: 20px;
+
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #8987A1;
+   
 }
