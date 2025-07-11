@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
   font-family: "Raleway", sans-serif; 
@@ -25,7 +26,7 @@ font-family: "Inter", sans-serif;
 
 }
 .primary-btn:hover{
-    background-color: rgb(94, 167, 220);
+    background-color: tomato;
     color: black;
     transition: .3s;
 }
@@ -36,6 +37,7 @@ font-family: "Inter", sans-serif;
 /* header css */
 .header{
     background-image: url('../img/Hero-bg.png');
+    padding-bottom: 130px;
 }
 nav{
     display: flex;
@@ -56,6 +58,7 @@ nav h3{
 
 .banner-content{
     text-align: center;
+    
    
 }
 
@@ -68,9 +71,7 @@ nav h3{
     margin-top: 158px;
 
 }
-.banner-content button{
-    margin-bottom: 150px;
-}
+
 
 
 /* action section css */
@@ -190,69 +191,91 @@ nav h3{
     font-weight: bold;
     margin-bottom: 14px;
 }
-.focus-section button{
-    margin: 14px 0px;
-    
-}
 
+.focus-section p{
+    margin-bottom: 30px;
+}
 .focus-section img{
     border-radius: 30px;
+    margin-top: 30px;
 }
 
 
 /* contact area css */
-.contact-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding-bottom: 100px;
-    margin: 0;
-    max-width: 1140px;
-    
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  border-radius: 10px;
+  gap: 50px;
+  padding: 70px 0px;
 }
 
-.contact-title h3{
-    font-size: 97px;
-    font-weight: bold;
-    padding: 70px 0px;
+.contact-left {
+  flex: 1;
+  padding-right: 0px;
 }
 
-form label{
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-    
+.contact-left h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
 }
-form input[type="text"], input[type="email"], form textarea{
-    width: 100%;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: white;
-    margin: 10px 0px;
+
+.contact-right {
+  flex: 1;
 }
-.contact-btn{
-    background-color: blue;
-    width: 100%;
-    display: block;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    border: none;
-    margin-top: 10ox;
-    
+
+form {
+  display: flex;
+  flex-direction: column;
 
 }
 
-form{
-    /* padding: 50px; */
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
+form input,
+form textarea {
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+form a {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #4c57f0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  transition: .3s;
+}
+
+form a:hover {
+  background-color: tomato;
+}
+
+
+/* footer-css */
 footer{
     background-color: white;
     text-align: center;
     padding: 120px 0px;
+    
     
 }
 .footer-content{
